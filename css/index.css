@@ -1,0 +1,59 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notice-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice-board a{
+    margin: 0px 30px;
+}
+
+.btn-twitch{
+   
+}
+.btn-youtube{
+}
+.button{
+    border:  none;
+
+}
+.button1{
+    border: none;
+    height: 60px;
+  
+}
+.btn-inbang{
+    margin: 30px 0px;
+    padding: 10px;
+}
+
+.btn-popular{
+    background-color: tomato;
+}
+.btn-rank{
+    background-color: tomato;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+.link-site{
+    margin-right: 30px;
+}
+
+.link-site a{
+    margin: 0px 20px;
+}
+
+.btn-divide{
+    margin-bottom: 10px;
+}

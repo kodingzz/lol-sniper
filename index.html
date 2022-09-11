@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, 그리고 Bootstrap 기여자들">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>롤 저격 사이트 Sniper</title>
+
+    <link rel="canonical" href="https://getbootstrap.kr/docs/5.1/examples/headers/">
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="headers.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="bootstrap" viewBox="0 0 118 94">
+    <title>Bootstrap</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+  </symbol>
+  <symbol id="home" viewBox="0 0 16 16">
+    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+  </symbol>
+  <symbol id="speedometer2" viewBox="0 0 16 16">
+    <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+    <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+  </symbol>
+  <symbol id="table" viewBox="0 0 16 16">
+    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+  </symbol>
+  <symbol id="people-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+  </symbol>
+  <symbol id="grid" viewBox="0 0 16 16">
+    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+  </symbol>
+</svg>
+
+<main>
+ 
+
+  <nav class="py-2 bg-light border-bottom">
+   
+    <div class="container ">
+        <div class="row">
+            <div class="col-xl-2"> <img src="스나이퍼.PNG" width="200"></div>
+            <div class="col-xl-8">
+                <div class="notice-board">
+                    <a href="#"><span>자유계시판</span></a>
+                    <a href="#"><span>듀오계시판</span></a>
+                    <a href="#"><span>추가/수정계시판</span></a>
+             
+                   </div>
+            </div>
+            <div class="col-xl-2">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2">로그인</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-dark px-2">회원가입</a></li>
+                  </ul>
+            </div>
+
+        </div>
+      
+    </div>
+  </nav>
+ 
+
+  <div class="b-example-divider"></div>
+
+  <div class="first-row">
+    <div class="btn-group btn-inbang">
+        <button type="button" class=" button btn-youtube">
+            <img src="data:image/png;base64,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" width="80"/>
+        </button>
+        <button type="button" class="button btn-twitch">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NEA8NDQ8PDg8NEA0NDg4PDg8ODg0PFhEWFyASFhMYHiggGBsmGxMVITEhKCkrLi4uFx8zODMtOCg5LisBCgoKDg0OFw8QGDAlHSAtNy0vLisrNS0tLisrKy0tKystLSsrLS0tLS0tLTcrNy0tLS0tKys3LTctKystKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQcEBQgGA//EAEsQAAEDAQMDDwgGBwkAAAAAAAABAgMEBQYRITSzBwgSFTE1QVFUYXF0k5TSF0JTcrLD0eETIiNVkbQyQ3OSoaKxFBgkUmJ1gfDx/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAEEAwUGAv/EACgRAQACAAQGAgIDAQAAAAAAAAABAgMEETEFEiEzUXETQVJhIiORFP/aAAwDAQACEQMRAD8AwwAd+2QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQqgSAgI5o8moCAOaPJqkEAc0eTVIIA5o8mqQQBzR5NUgjKSmI5o8moAhJIgAAAAAAAAAAAAAAAAkhSMQCmqt62mUbOB0rk+ozH+ZeYW9bLKNnA6VyfUZxf6l5iua2rfM90kjlc5y4qq7v/hqOIZ+MKOSm7Bi4unSH1qLUqHuV6yyYuXZLg5yJ+CHz2wqPTS9o/4mTdmljqK2ip5UV0dRVUsMiIqtVWPla1URU3MiqdH+Ru73JpO9VHiOcnFvO8qjmfbCo9NL2j/iNsKj00vaP+J0x5G7vcmk71P4h5G7vcmk71P4jz8lvI5n2wqPTS9o/wCI2wqPTS9o/wCJ0x5G7vcmk71P4h5G7vcmk71P4h8lvI5n2wqPTS9o/wCI2wqPTS9o/wCJ0x5G7vcmk71P4h5G7vcmk71P4h8lvI5n2wqPTS9o/wCI2wqPTS9o/wCJ0x5G7vcmk71P4h5G7vcmk71UeIfJbyOZ9sJ/Sy9o42l2qyV1VC10j3NVy4or3Ki5F4CwtWe4tmWRS001DE+N8tQsT1dNLJi36Ny7jlXDKiFa3XzyD119lTNl8S3yV6/aYnrCziSCTto2bEAAAAAAAAAAAAAAAANVbtsso2Y5HSOTFjMf5l5jaKhWt7XqtZMnErUTmTYoa7iWZtg4X8ftixr8sNbWVb5nukkdsnOyqv8A3gMdVCkHJ2tNp1lSbq5W+dm9eodOw7JONrlb52b16h07DskiQABAApq/Oq/W2XaFTQR0tNIyndGjXvWVHO2UTH5cFw85T1mpVfWe3YKiaeKKFYJWxNbEr1RUVmyxXZLzge5APCaqt96iwoqaWCGKZaiR8bklV6I1Ebjk2Kge7IKcuJqvVtq19PQy01PEyZX7J7FlV7dixXZMVw4C5AKi1yOYUfXPcvKQutnkHrL7Kl365HMKPrnuXlIXWzuD1l9lTNl+7X2mN4Wd8ySPmSdzGzYgAAAAAAAAAAAAAAAClZXtzyfpZ7DSzVKyvbnk3THo2ml4z249q+Y+mnUglSDmlVurlb52b16h07Dsk42uVvnZvXqHTsOySZAAEDlHVl38tD14Py8RZuttzOu6yzRIVlqy7+Wh68H5eIs3W25nXdZZokAuEpvXKZrQdYm0aFyFN65PNaDrE2jQCuNRffui6ZtE46qOVdRffui6ZtE46qAqPXI5hR9c9y8pC62dwesvsqXfrkcwo+ue5eUhdbO4PWX2VM2X7tfaY3hZ3zJI+ZJ3MbNiAAAAAAAAAAAAAAACRSsr255N0x6NpZqlZXtzybpj0bTS8a7dfatmNoadSCVIOaVW6uVvnZvXqHTsOyTja5W+dm9eodOw7JJkACFIHKWrLv5aHrwfl4izdbbmdd1lmiQs+ewaGVzpJaSmke/K574I3OdkwyqqZciJ+B96GzqenRUp4YoUcuLkijZGjl412KZQMspvXJ5rQdYm0aFyGHXWbT1KNSohimRqqrUljZIjV40RUA5f1GN+6Lpm0Tjqs11PYNDE5JIqSmje3HYvZBGx7cUwyKiYobFEAqPXI5hR9c9y8pC62dwesvsqXfrkMxo+troXlIXWzyD1l9lTNl+7X2mN4Wd8ySPmSdzGzYgAAAAAAAAAAAAAAAkUrK9ueTdMejaWapWV7c8m6Y9G00vGu3X2rZjaGnUglSDmlVurlb52b16h07Dsk42uVvnZvXqHTsOySZAEEkAAAAIGIEmsvBbVNZ8ElXVSJHFEmVd1zncDGpwuVciITb1tU1n08lXVSJFFEmLlXdVeBrU4XLwIcuX/AL71Ntz7N6rHTRKqU1NjikaL57uN65MV4NxAGqBfaptuf6STGOnjVUp6ZFxbGn+Z3G9eFf8AhDAuhSPfVRva1VbEuye7gRMF/iYljWTJVyIxmRqZXvXcYnxLIs+ijp42xRJgibq8Ll41Nrw/JWxbRedoZcLDm06skkIDql0AAAAAAAAAAAAAAAEilZXtzybpj0bSzVKyvbnk3THo2ml4126+1bMbQ06kEqQc0qs2xq5aWop6pGo9aaeCoRirgj1jejtjjz4FueX+o+7ou8v8JSwAuny/1H3bF3l/hPW6mmqhLbtXLSPpGU6R076lHtldIqq2SNmxwVE9J/A5pLV1ue+lR/t835inA6Mc7A8Dqi6plPYqtgjYlTVuRr1h2ewbFHjuvdguCrhkTDnycPw1UtUaOx2f2an2MlfK1Va1craVq/rHpwrxN4d3c3eaqyqkmkfLK90kkjle9712TnuXhVQLi/vAVH3dF3l/hHl/qPu6LvL/AAlLgmB6u/d+ay3JWvm+yhiT7KmY7GNi4ZXKvnOXHdU01jWVJVyIxiYNTK9+GRic/wACLHsuSrkSNmREwV7l3GN4/kWTZ1BHTRpFEmCJ+k7znu41NnkMjONbmtHRlw8ObT+izqGOmjbFEmCJlVeFzuNTKaMCTqaUilYrELsRpGkAAPQAAAAAAAAAAAAAAAAKVle7PJulmjaWaVne1P8AFzdLNG00vGe3HtXzG0NMpBOAwOb0VUAnAggD01yL1S2NJUVMDEdNNSvpIldlbE50sb/pFThwSPInGqHmSUQD71lXJO98sr3SSSOV8j3uVznuXhVVMcnBRgToCIbCx7Kkq5EjYmRMr3r+ixvGosiy5aqRI4053uVPqsbxqWTZtnxUsaRRJk3XOX9J7uNTZZHI2xrc07MmHhzaf0WbQR0saRRJgiZXL5z141MtECE4HVUpWkaVjouxERGkAAPSQAAAAAAAAAAAAAAAAAAMDCmsymkcrpIY3uXdc5qKqmaQh4tStuloRMRO7A2mo+TxfuINpqPk8P7iGwwIVDx/z4f4x/iOSvhp7UsmlbBM5sESKkb1RUYiKiomJWalsWvm8/7OT2VKpwOf4vStb10hVx4iJ6Iah66693UkwnqW/U8yNfP515v6kXWu5s9jUVCfUyKyNf1nOvN/U9qn4Hvh/Dub+zEh6wsLXrLC2mo+Tw9m0bT0fJ4ezaZ+BGBvYy+F+MLHJXw+NNSRRIqRRsjRcqo1qJifbAnAky1rFY0h6iNEAAkAAAAAAAAAAAAAAAAAAAAAAAAAoIxCWJayfYTfs5PZPKXXu79JhUVCfZ44sYuT6TnXmPaPYjkVrkRUVMFRdxUJw4vw4EKeNlK4uLF7fTFbD1trIibn4YE4BEJLkRp0ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARgSSQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q==" width="80"/>
+    
+        </button>
+        <button type="button" class=" button btn-afreeca">
+            <img src="https://play-lh.googleusercontent.com/BQ66ZXHi_oKNOXQCfiED3WizFpxZlmG7YCf0bHaFG8o9i0tE4_z9WDJ-J6z2pGA4VQ" width="80"/>
+        </button>
+      </div>
+      <div class="link-site">
+        <a href="https://fow.kr"><fow class="kr">fow.kr</fow></a>
+        <a href="https://www.op.gg"><fow class="kr">op.gg</fow></a>
+        <a href="https://lol.ps"><fow class="kr">lol.ps</fow></a>
+        <a href="https://kr.whatismymmr.com"><fow class="kr">what's my mmr</fow></a>
+      </div>
+     
+
+  </div>
+
+
+
+
+<div class="btn-divide">
+    <button type="button" class="button1 btn-popular">
+        <span>인기별</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/5650/5650367.png" width="40"/>
+    </button>
+    <button type="button" class="button1 btn-rank">
+        <span>티어별</span>
+        <img src="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4415894930323/Challenger_Emblem_2022.png" width="50"/>
+    </button>
+
+</div>
+   
+
+    
+  <table class="table table-bordered ">
+    <thead>
+      <tr>
+        <th scope="col">순위</th>
+        <th scope="col">롤닉네임</th>
+        <th scope="col">방송인이름</th>
+        <th scope="col">티어점수</th>
+        <th scope="col">mmr</th>
+        <th scope="col">게임여부</th>
+        <th scope="col">시청자수</th>
+        <th scope="col">구독자수</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>PLATINUM4 76</td>
+            <td>1946</td>
+            <td>아이콘표시</td>
+            <td>5534</td>
+            <td>469000</td>
+
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+    </tbody>
+  </table>
+
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      
+  </body>
+</html>
